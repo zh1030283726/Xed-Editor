@@ -98,7 +98,7 @@ fun LanguageScreen(modifier: Modifier = Modifier) {
                 indianLangs.forEach { locale ->
                     SettingsToggle(
                         modifier = Modifier,
-                        label = locale.getDisplayLanguage(locale),
+                        label = locale.getDisplayName(locale),
                         default = false,
                         sideEffect = {
                             setAppLanguage(locale)
@@ -129,7 +129,7 @@ fun LanguageScreen(modifier: Modifier = Modifier) {
                 languages.forEach { locale ->
                     SettingsToggle(
                         modifier = Modifier,
-                        label = locale.getDisplayLanguage(locale),
+                        label = locale.getDisplayName(locale),
                         default = false,
                         sideEffect = {
                             setAppLanguage(locale)
